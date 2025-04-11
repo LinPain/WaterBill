@@ -1,0 +1,316 @@
+namespace asm_2
+{
+    partial class ManageBill
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageBill));
+            this.tbWMLastMonth = new System.Windows.Forms.TextBox();
+            this.tbWMThisMonth = new System.Windows.Forms.TextBox();
+            this.tbNumber = new System.Windows.Forms.TextBox();
+            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.dgvBills = new System.Windows.Forms.DataGridView();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btbnDelete = new System.Windows.Forms.Button();
+            this.btnASC = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnDESC = new System.Windows.Forms.Button();
+            this.cbType = new System.Windows.Forms.ComboBox();
+            this.btnEI = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbNumber = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBills)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // tbWMLastMonth
+            // 
+            this.tbWMLastMonth.Location = new System.Drawing.Point(32, 136);
+            this.tbWMLastMonth.Name = "tbWMLastMonth";
+            this.tbWMLastMonth.Size = new System.Drawing.Size(181, 20);
+            this.tbWMLastMonth.TabIndex = 0;
+            // 
+            // tbWMThisMonth
+            // 
+            this.tbWMThisMonth.Location = new System.Drawing.Point(32, 185);
+            this.tbWMThisMonth.Name = "tbWMThisMonth";
+            this.tbWMThisMonth.Size = new System.Drawing.Size(181, 20);
+            this.tbWMThisMonth.TabIndex = 1;
+            // 
+            // tbNumber
+            // 
+            this.tbNumber.Location = new System.Drawing.Point(32, 280);
+            this.tbNumber.Name = "tbNumber";
+            this.tbNumber.Size = new System.Drawing.Size(181, 20);
+            this.tbNumber.TabIndex = 2;
+            // 
+            // tbSearch
+            // 
+            this.tbSearch.Location = new System.Drawing.Point(348, 29);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(376, 20);
+            this.tbSearch.TabIndex = 4;
+            this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
+            // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(32, 85);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(181, 20);
+            this.tbName.TabIndex = 5;
+            // 
+            // dgvBills
+            // 
+            this.dgvBills.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBills.Location = new System.Drawing.Point(268, 86);
+            this.dgvBills.Name = "dgvBills";
+            this.dgvBills.Size = new System.Drawing.Size(457, 215);
+            this.dgvBills.TabIndex = 6;
+            this.dgvBills.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBills_CellClick);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(259, 344);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.TabIndex = 7;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btbnDelete
+            // 
+            this.btbnDelete.Location = new System.Drawing.Point(368, 344);
+            this.btbnDelete.Name = "btbnDelete";
+            this.btbnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btbnDelete.TabIndex = 8;
+            this.btbnDelete.Text = "Delete";
+            this.btbnDelete.UseVisualStyleBackColor = true;
+            this.btbnDelete.Click += new System.EventHandler(this.btbnDelete_Click);
+            // 
+            // btnASC
+            // 
+            this.btnASC.Location = new System.Drawing.Point(480, 344);
+            this.btnASC.Name = "btnASC";
+            this.btnASC.Size = new System.Drawing.Size(75, 23);
+            this.btnASC.TabIndex = 9;
+            this.btnASC.Text = "ASC";
+            this.btnASC.UseVisualStyleBackColor = true;
+            this.btnASC.Click += new System.EventHandler(this.btnASC_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(693, 344);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.TabIndex = 10;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnDESC
+            // 
+            this.btnDESC.Location = new System.Drawing.Point(589, 344);
+            this.btnDESC.Name = "btnDESC";
+            this.btnDESC.Size = new System.Drawing.Size(75, 23);
+            this.btnDESC.TabIndex = 11;
+            this.btnDESC.Text = "DESC";
+            this.btnDESC.UseVisualStyleBackColor = true;
+            this.btnDESC.Click += new System.EventHandler(this.btnDESC_Click);
+            // 
+            // cbType
+            // 
+            this.cbType.FormattingEnabled = true;
+            this.cbType.Items.AddRange(new object[] {
+            "Household",
+            "Administrative agency, public services",
+            "Production units",
+            "Business services"});
+            this.cbType.Location = new System.Drawing.Point(33, 233);
+            this.cbType.Name = "cbType";
+            this.cbType.Size = new System.Drawing.Size(181, 21);
+            this.cbType.TabIndex = 12;
+            this.cbType.SelectedIndexChanged += new System.EventHandler(this.cbType_SelectedIndexChanged);
+            // 
+            // btnEI
+            // 
+            this.btnEI.BackColor = System.Drawing.Color.Red;
+            this.btnEI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnEI.Location = new System.Drawing.Point(33, 329);
+            this.btnEI.Name = "btnEI";
+            this.btnEI.Size = new System.Drawing.Size(181, 23);
+            this.btnEI.TabIndex = 13;
+            this.btnEI.Text = "Export  Invoice";
+            this.btnEI.UseVisualStyleBackColor = false;
+            this.btnEI.Click += new System.EventHandler(this.btnEI_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Blue;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnSave.Location = new System.Drawing.Point(32, 367);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(181, 23);
+            this.btnSave.TabIndex = 14;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(201, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Search by name of customer";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(30, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 13);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Name of customer";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(30, 121);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 13);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Water meter last month";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(30, 170);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(116, 13);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Water meter this month";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(30, 217);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(89, 13);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Type of customer";
+            // 
+            // lbNumber
+            // 
+            this.lbNumber.AutoSize = true;
+            this.lbNumber.Location = new System.Drawing.Point(30, 265);
+            this.lbNumber.Name = "lbNumber";
+            this.lbNumber.Size = new System.Drawing.Size(91, 13);
+            this.lbNumber.TabIndex = 20;
+            this.lbNumber.Text = "Number of people";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(32, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(162, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ManageBill
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 402);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lbNumber);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnEI);
+            this.Controls.Add(this.cbType);
+            this.Controls.Add(this.btnDESC);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnASC);
+            this.Controls.Add(this.btbnDelete);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.dgvBills);
+            this.Controls.Add(this.tbName);
+            this.Controls.Add(this.tbSearch);
+            this.Controls.Add(this.tbNumber);
+            this.Controls.Add(this.tbWMThisMonth);
+            this.Controls.Add(this.tbWMLastMonth);
+            this.Name = "ManageBill";
+            this.Text = "Manage Bill";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBills)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox tbWMLastMonth;
+        private System.Windows.Forms.TextBox tbWMThisMonth;
+        private System.Windows.Forms.TextBox tbNumber;
+        private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.DataGridView dgvBills;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btbnDelete;
+        private System.Windows.Forms.Button btnASC;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Button btnDESC;
+        private System.Windows.Forms.ComboBox cbType;
+        private System.Windows.Forms.Button btnEI;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbNumber;
+        private System.Windows.Forms.PictureBox pictureBox1;
+    }
+}
