@@ -1,0 +1,68 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace asm_2
+{
+    public partial class Login : Form
+    {
+        public Login()
+        {
+            InitializeComponent();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string u = tbUser.Text;
+            string p = tbPassword.Text;
+            if (u.Equals("admin") && p.Equals("water123456"))
+            {
+                MessageBox.Show(this, "Login sucess", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ManageBill manageBill = new ManageBill();
+                this.Hide();
+                manageBill.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show(this,"User or pass is incorrect!!","Result", MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            string message = "Are you sure you wanna exit ?";
+            string title = "";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else
+            {
+            }
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            string message = "Are you sure you wanna exit ?";
+            string title = "";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons);
+            if (result == DialogResult.Yes)
+            {
+                e.Cancel = false;
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
+    }
+}
